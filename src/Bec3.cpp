@@ -65,8 +65,10 @@ Bec3::~Bec3(){
 void Bec3::connect(string username, string password){
 	RestClient::response connect = RestClient::post("http://localhost:9000/login", "text/json", "{\"username\":\"" + username + "\",\"password\":\"" + password + "\",\"service\":\"im.bec3.com\",\"resource\":\"REST\"}");
 	httpError(connect.code);
+
 	cout << "Hello " + username + " you are : " << "\033[32m[connected]\033[00m" << endl;
-	
+	cout << "ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ" << endl;
+
 	//On récupère le cookie généré et on l'ajoute au headers
 	string cookie = connect.headers.find("Set-Cookie")->second;
 	cookie = cookie.substr(0, cookie.find(";"));
@@ -102,7 +104,6 @@ State &Bec3::getObjectState(std::string id){
 
 bool Bec3::requestTime(){
     if( (clock() - (float)timer)/CLOCKS_PER_SEC > 0.05){
-    	cout << "coucou" << endl;
     	timer = clock();
     	return true;
     }
