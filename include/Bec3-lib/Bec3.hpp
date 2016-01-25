@@ -19,6 +19,7 @@ class Bec3 {
 		Bec3();
 		Bec3(std::string path);
 		Bec3(std::string username, std::string password);
+		void initFromFile(std::string path);
 		~Bec3();
 		void updateObjects();
 		State &getObjectState(std::string id);
