@@ -12,12 +12,18 @@ extern RestClient::headermap headers;
 using namespace std;
 using namespace rapidjson;
 
-Bec3::Bec3(string username, string password){
-	connect(username, password);
-	timer = std::clock();
-}
+Bec3::Bec3(){}
 
 Bec3::Bec3(string path){
+    initFromFile(path);
+}
+
+Bec3::Bec3(string username, string password){
+    connect(username, password);
+    timer = std::clock();
+}
+
+void Bec3::initFromFile(string path){
 
     ifstream conf(path);
 
