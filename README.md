@@ -15,7 +15,7 @@ Project realised in IMAC Engineering School
     
 2) Move it to your third-party directory
 
-3) In your third-party's CMakeLists.txt, add the line : 
+3) In your third-party's CMakeLists.txt, add Bec3-lib subdirectory's
     
     add_subdirectory(Bec3-lib)
     
