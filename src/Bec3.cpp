@@ -103,7 +103,7 @@ State &Bec3::getObjectState(std::string id){
 }
 
 bool Bec3::requestTime(){
-    if( (clock() - (float)timer)/CLOCKS_PER_SEC > 0.05){
+    if( (clock() - (float)timer)/CLOCKS_PER_SEC > 0.01){
     	timer = clock();
     	return true;
     }
