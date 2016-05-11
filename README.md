@@ -1,4 +1,4 @@
-# Bec3 - Library
+# BeC3 - Library
 
 Project realised in IMAC Engineering School
 
@@ -7,7 +7,7 @@ Project realised in IMAC Engineering School
 - Linux Ubuntu
 - Mac OSX
 
-## Set up Bec3-lib
+## Set up BeC3-lib
 
 1) Download zip file or clone the git repository
 
@@ -103,7 +103,7 @@ mySession.addObject("myLight", "light");
 ```
 ## Use an object
 ### Get the state of an objects
-If you want to get the state of an object, the Bec3 class has the method `getObjectState()` which takes the ID of the object and which returns a state object.
+If you want to get the state of an object, the Bec class has the method `getObjectState()` which takes the ID of the object and which returns a state object.
 ```cpp
 mySession.getObjectState("id");
 ```
@@ -132,4 +132,4 @@ The method `updateObjects()` is made for that.
 ```cpp
 mySession.updateObjects();
 ```
-### Thank you for using our library. Have fun with BeC3 and Bec3-lib !
+### Thank you for using our library. Have fun with BeC3 and BeC3-lib !
