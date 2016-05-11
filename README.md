@@ -1,6 +1,6 @@
-# BeC3-lib
-
 [![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.0-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)
+
+# BeC3-lib
 
 Project realised in IMAC Engineering School.
 
