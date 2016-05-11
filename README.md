@@ -1,17 +1,14 @@
-# BeC3 - Library
+# BeC3-lib
 
-Project realised in IMAC Engineering School
+[![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.0-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)
 
-**Supported OS :**
-
-- Linux Ubuntu
-- Mac OSX
+Project realised in IMAC Engineering School.
 
 ## Set up BeC3-lib
 
 1) Download zip file or clone the git repository
 
-    git clone https://github.com/PierreChls/Bec3-lib.git
+    git clone https://github.com/PierreChls/BeC3-lib.git
 
 2) Move it to your third-party directory
 
