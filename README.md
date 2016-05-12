@@ -84,7 +84,7 @@ Bec3 mySession;
 mySession.initFromFile("assets/conf/Bec3.json");
 ```
 
-*Example configuration file :*
+Example JSON configuration file :
 
 ```
 {
