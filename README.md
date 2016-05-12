@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/badge/version-1.1-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)
+[![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows-lightgrey.svg)
 
 # BeC3-lib
 
@@ -16,7 +16,7 @@ Project realised in IMAC Engineering School.
 
     add_subdirectory(Bec3-lib)
 
-4) In your project's CMakeLists.txt, include Bec3-lib directory's and set Bec3-lib
+4) In your project's CMakeLists.txt, include Bec3-lib directory's and set BeC3-lib
 
     include_directories(third-party/Bec3-lib/include/)
     set(Bec3-lib)
@@ -25,7 +25,7 @@ Project realised in IMAC Engineering School.
 
 
 
-### Install Web-Lite API (created by Bec3)
+### Install Web-Lite API (created by BeC3)
 
 - Download [Web-Lite](https://drive.google.com/file/d/0ByN00DGNcsTBSUZDbWktbXh2RHM/view?usp=sharing)
 - Install [JAVA ORACLE JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
