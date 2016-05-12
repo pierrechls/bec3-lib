@@ -21,6 +21,7 @@ Project realised in IMAC Engineering School.
     include_directories(third-party/Bec3-lib/include/)
     set(Bec3-lib)
 
+
 ## Prior installation
 
 
@@ -60,34 +61,60 @@ Download [CURL](http://curl.haxx.se/download.html)
 ## How to use
 
 ### Create a session
+
 #### 1. Make an instance of the Bec3 class
-```cpp
+
+```
 Bec3 mySession;
 ```
 #### 2. Initialize the session
+
 There are two ways to init the session, you can pass a json initialization file as a constructor parameter, or pass your username and password as constructor parameters too.
+
 * The file way
-```cpp
+
+```
 Bec3 mySession = new Bec3("assets/conf/Bec3.json");
 ```
+
 Notice that you can delay the file initialization with the `initFromFile()` method
-```cpp
+
+```
 Bec3 mySession;
 mySession.initFromFile("assets/conf/Bec3.json");
 ```
+
+*Example configuration file :*
+
+```
+{
+  "user": {
+    "login"    : "corentin.limoge",
+    "password" : "coucou" 
+  }
+}
+``` 
+
+
 * The login way
-```cpp
+
+```
 Bec3 mySession = new Bec3("username", "password");
 ```
 
 ### Create an object
 For create a virtual object, you need to add an object to your session. You had to use the `addObject()` method
-```cpp
+
+```
 mySession.addObject("id", "type");
 ```
+
 #### Object id
+
 The id of the object is simply its name, you can choose whatever you want.
+
 #### Object types
+
 There are four types of object :
 * gauge : The gauge can be "filled" by others objects of the BeC3 platform.
 * slider : The slide can take a value between 0 and 255.
@@ -95,38 +122,32 @@ There are four types of object :
 * msg-receiver : This object can receive a text message.
 
 #### Example
-```cpp
+
+```
 mySession.addObject("myLight", "light");
 ```
 ## Use an object
+
 ### Get the state of an objects
+
 If you want to get the state of an object, the Bec class has the method `getObjectState()` which takes the ID of the object and which returns a state object.
-```cpp
+
+```
 mySession.getObjectState("id");
 ```
 You can perform four actions on a state :
-* retrieve the ID (in a string)
-  ```cpp
-  mySession.getObjectState("id").getId();
-  ```
-* retrieve the string value
-  ```cpp
-  mySession.getObjectState("id").getString();
-  ```
-* retrieve the int value
-  ```cpp
-	mySession.getObjectState("id").getInt();
-  ```
-* retrieve the boolean value
-```cpp
-	mySession.getObjectState("id").getBool();
-```
+
+* retrieve the ID (in a string) : `mySession.getObjectState("id").getId();`
+* retrieve the string value : `mySession.getObjectState("id").getString();`
+* retrieve the int value : `mySession.getObjectState("id").getInt();`
+* retrieve the boolean value : `mySession.getObjectState("id").getBool();`
 
 ### Update the state of your objects
 Each object have a state, depending of its type.
 You had to update the different states of the objects before you want use it.
 The method `updateObjects()` is made for that.
-```cpp
+
+```
 mySession.updateObjects();
 ```
 ### Thank you for using our library. Have fun with BeC3 and BeC3-lib !
